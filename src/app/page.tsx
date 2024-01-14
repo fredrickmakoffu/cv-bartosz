@@ -8,6 +8,7 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -59,19 +60,31 @@ export default function Page() {
                   </a>
                 </Button>
               ) : null}
-              {RESUME_DATA.contact.social.map((social) => (
+              {RESUME_DATA.contact.github ? (
                 <Button
-                  key={social.name}
                   className="size-8"
                   variant="outline"
                   size="icon"
                   asChild
                 >
-                  <a href={social.url}>
-                    <social.icon className="size-4" />
+                  <a href={`mailto:${RESUME_DATA.contact.github}`}>
+                    <GitHubIcon className="size-4" />
                   </a>
                 </Button>
-              ))}
+              ) : null}
+
+              {RESUME_DATA.contact.linkedin ? (
+                <Button
+                  className="size-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={`mailto:${RESUME_DATA.contact.linkedin}`}>
+                    <LinkedInIcon className="size-4" />
+                  </a>
+                </Button>
+              ) : null}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (
@@ -131,13 +144,18 @@ export default function Page() {
                     {work.title}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
-                </CardContent>
+                {work.description.map((sentence) => {
+                  return (
+                    <CardContent key={sentence} className="mt-2 text-xs">
+                      &#x2022; {sentence}
+                  </CardContent>
+                  )
+                })}
               </Card>
             );
           })}
         </Section>
+        
         <Section>
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
@@ -158,6 +176,25 @@ export default function Page() {
             );
           })}
         </Section>
+
+        <Section>
+          <h2 className="text-xl font-bold">Awards</h2>
+          {RESUME_DATA.honors.map((award) => {
+            return (
+              <Card key={award.title}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h4 className="font-semibold leading-none">
+                      {award.title}
+                    </h4>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2">{award.description}</CardContent>
+              </Card>
+            );
+          })}
+        </Section>
+
         <Section>
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
@@ -191,10 +228,14 @@ export default function Page() {
             url: RESUME_DATA.personalWebsiteUrl,
             title: "Personal Website",
           },
-          ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
-            url: socialMediaLink.url,
-            title: socialMediaLink.name,
-          })),
+            {
+              url: RESUME_DATA.contact.github,
+              title: "GitHub",
+            },
+            {
+              url: RESUME_DATA.contact.linkedin,
+              title: "LinkedIn",
+            }
         ]}
       />
     </main>

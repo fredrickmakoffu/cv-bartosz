@@ -1,278 +1,126 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
-
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Fredrick Makoffu Mbugua",
+  initials: "FMM",
+  location: "Nairobi, Kenya",
+  locationLink: "https://www.google.com/maps/place/Nairobi",
   about:
-    "Full Stack Engineer focused on building products with extra attention to detail",
+    "Experienced fullstack web dev. Forever learning. I love to build things.",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "Skilled in designing and implementing RESTful APIs, integrating with databases like MySQL, and deploying applications in cloud environments like AWS and Azure. Also experienced in utilizing SOLID principles and following object-oriented programming (OOP) paradigms to create maintainable, scalable, and efficient code. Strong ability to work collaboratively in fast-paced, agile development teams and a proven track record of leading projects to successful completion.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/42011427?v=4", // Replace with your avatar URL
+  personalWebsiteUrl: "https://findfred.online", // Replace with your website URL
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
-    social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
-        icon: GitHubIcon,
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
-        icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
-      },
-    ],
+    email: "fredrickmakoffu@gmail.com",
+    tel: "+254 711 787 441",
+    github: "https://github.com/fredrickmakoffu",
+    linkedin: "https://www.linkedin.com/in/fredrick-makoffu/",
+    social: []
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Strathmore University",
+      degree: "Bachelor's degree, Business and Information Technology",
+      start: "2012",
+      end: "2016",
     },
   ],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
-      description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
+      company: "Solutech Limited",
+      link: "https://solutech.co.ke",
       badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      title: "Backend Developer",
+      start: "Apr 2022",
+      end: "Present",
       description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
+        [
+          "Collaborated with cross-functional teams to maintain, improve and build new features, both on backend and frontend, on our SalesAutomation Product (SAT).",
+          "Worked with Support and other teams to document and address bugs and issues reported by clients.",
+          "Worked on product integration with third party services like SAP and end-to-end integration with external custom client systems."
+        ]
     },
     {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
+      company: "Taz Technologies",
+      link: "https://mpost.co.ke",
       badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+      title: "Lead Software Engineer",
+      start: "Feb 2021",
+      end: "Aug 2021",
+      description:
+        [
+          "Built, deployed and managed a feature-rich PWA package delivery app with VueJS", 
+          "Developed and maintained corporate websites for the MPost Product and Taz Technologies.",
+          "Engineered a seamless transfer of all features of the MPost Product onto Safaricom's Mini-App platform."
+        ]
     },
+    {
+      company: "Inshaka",
+      link: "",
+      badges: [],
+      title: "Founder, Developer",
+      start: "Feb 2019",
+      end: "Feb 2021",
+      description: [
+        "Designed, built, deployed and maintained a no-code platform called 'Inshaka' for small businesses to build apps rapidly .",
+        "Built an engine that allowed users to search for data across all apps built on the platform and build meaningful insights from thair data.",
+        "Worked on contract projects eg. API development of a Project Management app, backend and frontend development of a Learning Platform for schools during COVID."
+      ]
+    },
+    {
+      company: "Copycat Group",
+      link: "https://copycatgroup.com",
+      badges: [],
+      title: "Software Developer",
+      start: "Jul 2016",
+      end: "Jan 2019",
+      description: [
+        "Developed a custom Sales CRM for the company's IT and Printing department.",
+        "Developed an Approval System positioned as a possible product by the company through Oracle"
+      ]
+    }
   ],
   skills: [
-    "JavaScript",
-    "TypeScript",
-    "React/Next.js/Remix",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
+    "Laravel",
+    "Vue.js",
+    "PHP",
+    "MySQL",
+    "API Development",
+    "SASS",
+    "HTML5",
+    "Amazon Web Services (AWS)",
+    "Linux",
+    "PostgreSQL",
   ],
   projects: [
     {
-      title: "Consultly",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-      ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
+      title: "Gsort (a healthcare app)",
+      techStack: ["vuejs", "pwa", "laravel", "mysql"],
+      description: "online store to buy medicine, request for lab tests, get prescriptions from verified doctors and more.",
+      logo: "https://app.gearhealthsystem.com/img/ghs-logo.4c77efa5.png", // Replace with your logo URL or remove the logo property
+    },
+    {
+      title: "a room",
+      techStack: ["svelte"],
+      description: "made a room with svelte that you can interact with as a resume", 
+      logo: "https://app.gearhealthsystem.com/img/ghs-logo.4c77efa5.png", 
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
+        href: "https://github.com/fredrickmakoffu/svelte-room",
+        text: "View project",
+      }
+    },
+    // Add other projects as needed
+  ],
+  honors: [
+    {
+      title: "Best Team of the Year (Solutech Limited)",
+      date: "Jan 2024",
+      description: "Received 'Best Team of the Year' award, awarded to the Backend Team for outstanding work in 2023.",
     },
     {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
-    },
-    {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
-      link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
-      },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
+      title: "Best New Employee 2022 (Solutech Limited)",
+      date: "Dec 2022",
+      description: "Received 'Best New Employee' in 2022 for outstanding work performed.",
     },
   ],
 } as const;
+
